@@ -20031,6 +20031,10 @@
         "targetCapacityReservationGroupId": {
           "type": "string",
           "description": "The target capacity reservation group ARM Id."
+        },
+        "targetExtendedLocation": {
+          "$ref": "#/definitions/ExtendedLocation",
+          "description": "The target extended location."
         }
       },
       "required": [
@@ -21455,6 +21459,11 @@
         "targetLocation": {
           "type": "string",
           "description": "The target location."
+        },
+        "targetExtendedLocation": {
+          "$ref": "#/definitions/ExtendedLocation",
+          "description": "The target extended location.",
+          "readOnly": true
         },
         "targetAvailabilitySetId": {
           "type": "string",
